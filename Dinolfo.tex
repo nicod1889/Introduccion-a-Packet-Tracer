@@ -1,0 +1,81 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref}
+
+\title{Introducción a Packet Tracer}
+\author{Nicolás Dinolfo}
+\date{August 2024}
+
+\begin{document}
+
+\maketitle
+
+\section{Packet Tracer}
+Cisco Packet Tracer es una herramienta para aprender la tecnología de redes, que proporciona una combinación de simulaciones realistas, visualización, evaluación, creación de actividades y opciones para colaboración multiusuario y competencia. Las características innovadoras de Packet Tracer permiten a estudiantes y docentes colaborar, resolver problemas y aprender conceptos en un entorno social dinámico y envolvente. 
+
+El programa está compuesto por un área de trabajo, que es el espacio principal donde se pueden arrastrar y soltar dispositivos para crear una topología de red. Ademas, tiene una paleta de dispositivos que está situada en la parte inferior de la interfaz y que permite seleccionar diferentes dispositivos, como routers, switches, computadoras, y cables para agregarlos al área de trabajo. Packet Tracer tiene dos modos principales de operación:
+
+- Modo en Tiempo Real (Real-Time Mode): Este es el modo predeterminado en Packet Tracer. En este modo, la red se simula en tiempo real, lo que significa que los dispositivos en la red funcionan como lo harían en una red física.
+
+- Modo de Simulación (Simulation Mode): En el modo de simulación, los usuarios pueden observar y controlar el flujo de paquetes a través de la red en detalle. A diferencia del modo en tiempo real, este modo permite pausar y avanzar paso a paso para ver cómo los paquetes se mueven entre dispositivos.
+
+\begin{center}
+    \includegraphics[width=1\linewidth]{image.png}
+\end{center}
+
+\section{Dispositivos finales}
+En esta sección se detallan los End Devices (Dispositivos Finales). Estos dispositivos son esenciales para la simulación de redes, ya que representan los puntos de inicio y destino del tráfico de red. A continuación, algunos de los principales dispositivos finales, como computadoras, notebooks y servidores:
+
+- PC (Computadora de Escritorio): Representa una computadora de escritorio estándar que se conecta a la red para realizar diversas tareas. Soporta la configuración de diversas interfaces de red (Ethernet), puede ejecutar una variedad de aplicaciones de red y permite la configuración de direcciones IP, máscaras de subred, puertas de enlace predeterminadas, y servidores DNS.
+
+- Laptop (Notebook): Es un dispositivo portátil que ofrece funcionalidades similares a una PC de escritorio, pero con la ventaja de la movilidad. Es utilizada en escenarios donde la conexión inalámbrica es crucial, como en redes Wi-Fi.
+
+- Server (Servidor): Ss un dispositivo final que proporciona servicios a otros dispositivos en la red. En Packet Tracer, el servidor puede configurarse para emular una variedad de roles en una red.
+
+\begin{center}
+    \includegraphics[width=0.75\linewidth]{DispositivosFinales.png}
+\end{center}
+
+\section{Dispositivos de red}
+Existen distintos tipos de Network Devices (Dispositivos de red), como Routers, Switches y Hubs. Estos dispositivos son esenciales para la construcción y gestión de redes. 
+
+- Routers: Son dispositivos que encaminan paquetes de datos entre diferentes redes, asegurando que los datos lleguen a su destino a través de la mejor ruta disponible.
+
+- Switches: Los switches permiten simular la creación de redes LAN y la gestión del tráfico de datos entre dispositivos conectados.
+
+- Hubs: Funcionan como puntos de conexión centralizados para múltiples dispositivos en una red. A diferencia de los switches, los hubs transmiten datos a todos los puertos sin segmentar el tráfico.
+
+\begin{center}
+    \includegraphics[width=0.65\linewidth]{NetworkDevices.png}
+\end{center}
+
+\section{Cableado}
+Existen diferentes tipos de cables disponibles en Cisco Packet Tracer, con distintos usos prácticos en la plataforma. Es importante comprender cómo conectar y configurar dispositivos de red de manera efectiva durante las prácticas. Cada uno de estos cables tiene un propósito específico, y su correcto uso es crucial para la construcción y el mantenimiento de redes eficientes. Algunos de estos cables son:
+
+- Copper Straight-Through (Cobre Directo): Sirven para conectar dispositivos de diferentes tipos, como computadoras a switches o routers a switches. Es el cable más común para establecer conexiones básicas en redes locales.
+
+- Copper Crossover (Cobre Cruzado): Se utilizan para conectar dispositivos del mismo tipo, como computadora a computadora o switch a switch. Facilitan la configuración de enlaces directos entre dispositivos del mismo tipo sin necesidad de un dispositivo intermedio.
+
+- Fiber (Fibra Óptica): Conecta dispositivos a largas distancias o cuando se requiere un ancho de banda alto, como entre switches o routers en redes de gran escala. Permite establecer conexiones rápidas y estables en entornos donde las distancias y la velocidad de transmisión son críticas.
+
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{Cables.png}
+\end{center}
+
+
+\section{Computadoras conectadas}
+Se agregan dos computadoras en el Packet Tracer y se conectan entre sí mediante un Copper Crossover. Esta acción se realiza sin ningun problema, pero podemos observar que si se quisiera agregar otra PC, no se podria conectar. Esa es una limitacion y una de las soluciones es implementar un Hub.
+
+\begin{center}
+    \includegraphics[width=0.5\linewidth]{Computadoras.png}
+\end{center}
+
+\section{Bibliografia y GitHub}
+
+\begin{itemize}
+    \item {The Cisco Learning Network}: \href{https://learningnetwork.cisco.com/s/article/el-software-de-simulacion-cisco-packet-tracer}{learningnetwork.cisco.com}
+    \item {Introducción a Packet Tracer}: \href{https://marcosruiz.github.io/posts/tutorial-introduccion-a-packet-tracer/}{marcosruiz.github.io}
+    \item {Documento Fuente}: \href{https://github.com/nicod1889/Introduccion-a-Packet-Tracer}{github.com/nicod1889}
+\end{itemize}
+
+\end{document}
